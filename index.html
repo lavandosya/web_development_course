@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Page</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -81,7 +81,7 @@
                 <li class="navbar-item">
                   <a href="#reviews-block">Відгуки</a>
                 </li>
-                <li class="navbar-item"><a>Звʼязатись з нами</a></li>
+                <li class="navbar-item"><a href="#contact-us">Звʼязатись з нами</a></li>
               </ul>
             </div>
           </div>
@@ -121,16 +121,15 @@
             />
           </div>
 
-          <div class="about-us-icon-container">
-            <img
-              class="about-us-icon"
-              src="./images/about-us-icon.png"
-              alt="icon"
-            />
-          </div>
-
           <div class="about-us-content">
+            <div class="about-us-icon-container">
+              <img
+                class="about-us-icon"
+                src="./images/about-us-icon.png"
+                alt="icon"
+              />
             <h3>Про нас</h3>
+          </div>
             <h2>Познайомтесь з нашим чудовим проєктом допомоги тваринкам</h2>
             <p>
               Ласкаво просимо до нашого притулку для тварин – місця, де кожна
@@ -147,7 +146,7 @@
               відповідальності до своїх чотирилапих друзів. Разом ми будуємо
               світ, у якому кожна тварина відчуває тепло людської доброти.
             </p>
-            <button>Звʼязатися з нами</button>
+            <button onclick="location.href='#contact-us'">Звʼязатися з нами</button>
           </div>
         </div>
       </section>
@@ -340,7 +339,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <section id="contact-us" class="contact-section">
         <div class="contact-container">
           <div class="contact-heading">
             <p class="contact-icon">🐾</p>
