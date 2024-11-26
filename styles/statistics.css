@@ -1,0 +1,77 @@
+.statistics-section {
+    background-color: var(--main-purple);
+    color: white;
+    padding: 0px 20px; 
+    margin-top: -2%;
+}
+  
+  .statistics-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 100px; 
+  }
+  
+  .statistics-text {
+    flex: 1; 
+    text-align: left; 
+  }
+  
+  .statistics-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px; 
+  }
+  
+  .statistics-text p {
+    font-size: 1rem;
+  }
+  
+  .statistics-cards {
+    flex: 1; 
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+  }
+  
+  .statistics-card-1,
+  .statistics-card-2,
+  .statistics-card-3 {
+    text-align: center;
+  }
+  
+  .statistics-card-1 h3,
+  .statistics-card-2 h3,
+  .statistics-card-3 h3 {
+    font-size: 3rem;
+    color: var(--main-yellow); 
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .statistics-card-1 p,
+  .statistics-card-2 p,
+  .statistics-card-3 p {
+    font-size: 1rem;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .statistics-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .statistics-text {
+      text-align: center; 
+      margin-bottom: 20px;
+    }
+  
+    .statistics-cards {
+      justify-content: center;
+    }
+  }
+  
