@@ -1,0 +1,95 @@
+
+/*.reviews-block-section {
+    background-color: #fcd46c; 
+    padding: 50px 20px;
+    text-align: center;
+  }*/
+
+  .reviews-block-section {
+    background: linear-gradient(to bottom, #fff, #ffcc00); 
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .reviews-block-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .reviews-block-container h1 {
+    font-size: 2.5rem;
+    color: #4d0ca0; 
+    margin-bottom: 10px;
+  }
+  
+  .reviews-block-container .subtitle {
+    font-size: 1.2rem;
+    color: #666; 
+    margin-bottom: 40px;
+  }
+  
+  /* Сітка для карток */
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    padding: 20px;
+    text-align: center;
+    width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-10px); /* Підняття картки */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+  .review-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #905ccc; 
+  }
+  
+  .review-card h3 {
+    font-size: 1.5rem;
+    color: #905ccc;
+    margin: 10px 0;
+  }
+
+  .review-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .review-card .rating {
+    font-size: 1.2rem;
+    color: #ffcb3e; 
+    margin-bottom: 15px;
+  }
+  
+  .review-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4d0ca0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-card .btn:hover {
+    background-color: #4d0ca0; /* Темніший фіолетовий */
+  }
+  
