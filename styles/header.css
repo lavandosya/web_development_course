@@ -63,6 +63,7 @@
   position: absolute;
   top: 50px;
   left: -115px;
+  font-weight: 600;
 }
 
 .navbar-burger i {
@@ -119,6 +120,7 @@
   .navbar-menu {
     display: flex;
     position: static;
+    padding: 0;
   }
 
   .navbar-list {
