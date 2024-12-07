@@ -1,0 +1,111 @@
+/* Footer Section */
+.footer {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 40px 20px;
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Reduced gap for closer alignment */
+  }
+  
+  /* Individual Footer Sections */
+  .footer-section,
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    flex: 1;
+    min-width: 200px; /* Ensure consistent column width */
+    text-align: left;
+    margin-bottom: 20px; /* Uniform spacing between sections */
+  }
+  
+  /* Logo Section */
+  .footer-section img {
+    width: 180px; /* Larger logo image */
+    height: auto;
+    margin-bottom: 7px;
+  }
+  
+  .footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Section Titles */
+  .footer-section1 h3,
+  .footer-section2 h3,
+  .footer-section3 h3 {
+    font-size: 1.3rem; /* Section title font size */
+    color: #4d0ca0; /* Purple color for section titles */
+    margin-bottom: 10px;
+  }
+  
+  /* Text and Lists */
+  .footer-section1 ul,
+  .footer-section2 ul,
+  .footer-section3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section1 ul li,
+  .footer-section2 ul li,
+  .footer-section3 ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333; /* Text color */
+  }
+  
+  /* Adjust Donate Section */
+  .footer-section1 {
+    margin-right: -20px; /* Adjust spacing for alignment */
+    flex: 1;
+  } 
+  
+  /* Equal Alignment for Columns */
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    align-items: flex-start;
+  }
+  
+  /* Icons for List Items */
+  .footer-section1 ul li:before,
+  .footer-section2 ul li:before,
+  .footer-section3 ul li:before {
+    content: "●"; /* Circle bullet */
+    color: #4d0ca0; /* Purple icon color */
+    font-size: 0.8rem;
+    margin-right: 8px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .footer .container {
+      flex-direction: column;
+      gap: 30px; /* Increased gap for vertical alignment */
+    }
+  
+    .footer-section,
+    .footer-section1,
+    .footer-section2,
+    .footer-section3 {
+      text-align: center;
+    }
+  
+    .footer-section1 ul li,
+    .footer-section2 ul li,
+    .footer-section3 ul li {
+      justify-content: center;
+    }
+  }
+  
