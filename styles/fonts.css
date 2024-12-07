@@ -23,12 +23,12 @@
   font-weight: 600;
   font-family: Gilroy;
   font-display: swap;
-  src: url("./fonts/Gilroy-Heavy.ttf");
+  src: url("./fonts/Gilroy-Bold.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: Gilroy;
   font-display: swap;
-  src: url("./fonts/Gilroy-Bold.ttf");
+  src: url("./fonts/Gilroy-Heavy.ttf");
 }
