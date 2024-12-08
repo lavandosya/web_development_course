@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/home-block.css" />
     <link rel="stylesheet" href="styles/about-us.css" />
     <link rel="stylesheet" href="styles/adopt-pets.css" />
+    <link rel="stylesheet" href="styles/contact-us.css" />
     <link rel="stylesheet" href="styles/statistics.css" />
     <link rel="stylesheet" href="styles/story.css" />
     <link rel="stylesheet" href="styles/footer.css" />
@@ -447,7 +448,9 @@
       <section id="contact-us" class="contact-section">
         <div class="contact-container">
           <div class="contact-heading">
-            <p class="contact-icon">🐾</p>
+            <div class="contact-paw">
+              <i class="fa-solid fa-paw"></i>
+            </div>
             <h2 class="contact-title">
               З нами собаки перестають виживати, а починають жити!
             </h2>
@@ -467,6 +470,8 @@
                     name="name"
                     placeholder="Ваше ім'я"
                     class="form-input"
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
+                    title="Ім'я повинно містити щонайменше 2 літери і лише букви."
                     required
                   />
                 </div>
@@ -475,6 +480,8 @@
                     type="email"
                     name="email"
                     placeholder="Ваш Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Будь ласка, введіть дійсну email адресу."
                     class="form-input"
                     required
                   />
@@ -484,6 +491,8 @@
                     name="message"
                     placeholder="Ваше повідомлення"
                     class="form-textarea"
+                    minlength="10"
+                    title="Повідомлення повинно містити щонайменше 10 символів."
                     required
                   ></textarea>
                 </div>
@@ -492,8 +501,10 @@
                 </button>
               </form>
             </div>
-            <div class="contact-image">
-              <img src="images/girl-with-dog.jpg" alt="Дівчина з собакою" />
+            <div class="contact-image-wrapper">
+              <div class="contact-image">
+                <img src="images/girl-with-dog.jpg" alt="Дівчина з собакою" />
+              </div>
             </div>
           </div>
         </div>
