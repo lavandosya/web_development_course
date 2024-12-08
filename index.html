@@ -470,6 +470,8 @@
                     name="name"
                     placeholder="Ваше ім'я"
                     class="form-input"
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
+                    title="Ім'я повинно містити щонайменше 2 літери і лише букви."
                     required
                   />
                 </div>
@@ -478,6 +480,8 @@
                     type="email"
                     name="email"
                     placeholder="Ваш Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Будь ласка, введіть дійсну email адресу."
                     class="form-input"
                     required
                   />
@@ -487,6 +491,8 @@
                     name="message"
                     placeholder="Ваше повідомлення"
                     class="form-textarea"
+                    minlength="10"
+                    title="Повідомлення повинно містити щонайменше 10 символів."
                     required
                   ></textarea>
                 </div>
