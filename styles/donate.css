@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.donation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: var(--white);
+    height: 100vh; 
+}
+
+.donation-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.donation-info {
+    flex: 1;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
+}
+
+.about-us-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-us-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.donation-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.donation-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    background-color: var(--main-purple);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--light-purple);
+}
+
+
+.donation-option {
+    flex: 1;
+    background-color: var(--main-purple);
+    padding: 40px;
+    color: var(--white);
+    border-radius: 50px;
+}
+
+.donation-option h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.donation-option p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.donation-option-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-yellow);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.donation-option-1 h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.donation-option-1 h4:first-of-type {
+    color: var(--black); 
+    font-size: 25px;
+}
+
+.donate-btn {
+    background-color: var(--main-purple);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.donate-btn:hover {
+    background-color: var(--light-purple);
+}
+
+.donation-note {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .donation-container {
+        flex-direction: column;
+    }
+
+    .donation-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .donation-option {
+        margin-top: 30px;
+    }
+}
