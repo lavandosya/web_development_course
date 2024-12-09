@@ -1,0 +1,47 @@
+.call-to-action {
+    margin-top: -2%;
+    display: flex;
+    align-items: center;
+    background-color: #4d0ca0; 
+    color: #fff; 
+    overflow: hidden;
+  }
+  
+  .call-to-action-content {
+    max-width: 60%;
+    padding-left: 30px;
+  }
+  
+  .call-to-action-text { 
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0 15px;
+    line-height: 1.4;
+  }
+  
+  .call-to-action-button {
+    background-color: #ffcb3e; 
+    color: #000; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 35%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-to-action-button:hover {
+    background-color: #fcd46c; 
+  }
+  
+  .call-to-action-image {
+    display: block;
+  }
+  
+  .call-to-action-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  

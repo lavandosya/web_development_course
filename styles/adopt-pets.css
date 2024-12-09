@@ -1,0 +1,213 @@
+  /* Adopt-Pet-Block */
+
+  .adopt-pet-section {
+    background-color: var(--main-purple); 
+    padding: 50px 20px; 
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1; 
+    margin-top: -1%;
+  }
+
+  .adopt-pet-icon {
+    width: 50px;
+    height: auto;
+  }
+  
+  .adopt-pet-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .adopt-pet-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .adopt-pet-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    margin-top: 2px;
+    color: var(--white);
+  }
+
+  .adopt-pet-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .adopt-pet-card-2,
+  .adopt-pet-card-4,
+  .adopt-pet-card-5,
+  .adopt-pet-card-7 {
+    background-color: var(--main-yellow); 
+    padding: 20px;
+    border-radius: 15px 30px 15px 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .adopt-pet-card-1,
+  .adopt-pet-card-3,
+  .adopt-pet-card-6,
+  .adopt-pet-card-8 {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .adopt-pet-card-1 img,
+  .adopt-pet-card-2 img,
+  .adopt-pet-card-3 img,
+  .adopt-pet-card-4 img,
+  .adopt-pet-card-5 img,
+  .adopt-pet-card-6 img,
+  .adopt-pet-card-7 img,
+  .adopt-pet-card-8 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+ 
+  .adopt-pet-card-2 h3,
+  .adopt-pet-card-4 h3,
+  .adopt-pet-card-5 h3, 
+  .adopt-pet-card-7 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-purple); 
+    margin-bottom: 10px;
+  }
+
+   .adopt-pet-card-1 h3,
+   .adopt-pet-card-3 h3,
+   .adopt-pet-card-6 h3,  
+   .adopt-pet-card-8 h3 {
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: var(--main-yellow); 
+     margin-bottom: 10px;
+   }
+  
+  .adopt-pet-card-2 p,
+  .adopt-pet-card-4 p,
+  .adopt-pet-card-5 p,
+  .adopt-pet-card-7 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--black); 
+    margin-bottom: 15px;
+  }
+  
+  .adopt-pet-card-1 p,
+  .adopt-pet-card-3 p,
+  .adopt-pet-card-6 p,
+  .adopt-pet-card-8 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--white); 
+    margin-bottom: 15px;
+  }
+  
+  .adopt-pet-card-2 button,
+  .adopt-pet-card-4 button,
+  .adopt-pet-card-5 button,
+  .adopt-pet-card-7 button {
+    background-color: var(--main-purple); 
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .adopt-pet-card-1 button,
+  .adopt-pet-card-3 button,
+  .adopt-pet-card-6 button,
+  .adopt-pet-card-8 button {
+    background-color: var(--main-yellow); 
+    color: var(--black);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .adopt-pet-card-2 button:hover,
+  .adopt-pet-card-4 button:hover,
+  .adopt-pet-card-5 button:hover,
+  .adopt-pet-card-7 button:hover {
+    background-color: var(--light-purple);
+  }
+
+  .adopt-pet-card-1 button:hover,
+  .adopt-pet-card-3 button:hover,
+  .adopt-pet-card-6 button:hover, 
+  .adopt-pet-card-8 button:hover {
+    background-color: var(--light-yellow); 
+
+  }
+
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    .adopt-pet-section h2 {
+      font-size: 2rem;
+    }
+  
+    .adopt-pet-section p {
+      font-size: 1rem;
+    }
+  
+    .adopt-pet-cards {
+      grid-template-columns: 1fr; 
+    }
+
+    .adopt-pet-cards {
+        flex-direction: column;
+    }
+
+    .adopt-pet-card-1 {
+        order: 1;
+    }
+
+    .adopt-pet-card-2 {
+        order: 2;
+    }
+
+    .adopt-pet-card-3 {
+        order: 3;
+    }
+
+    .adopt-pet-card-4 {
+        order: 4;
+    }
+
+    .adopt-pet-card-8 {
+        order: 5;
+    }
+
+    .adopt-pet-card-5 {
+        order: 6;
+    }
+
+    .adopt-pet-card-6 {
+        order: 7;
+    }
+
+    .adopt-pet-card-7 {
+        order: 8;
+    }
+
+  }

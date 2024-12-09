@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Page</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/home-block.css" />
+    <link rel="stylesheet" href="styles/about-us.css" />
+    <link rel="stylesheet" href="styles/adopt-pets.css" />
+    <link rel="stylesheet" href="styles/contact-us.css" />
+    <link rel="stylesheet" href="styles/statistics.css" />
+    <link rel="stylesheet" href="styles/donate.css"/>
+    <link rel="stylesheet" href="styles/story.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/call-to-action.css" />
+    <link rel="stylesheet" href="styles/reviews-block.css" />
+    <script
+      src="https://kit.fontawesome.com/1bcd533024.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -67,22 +83,31 @@
                 <img class="navbar-logo" src="./images/logo.png" alt="logo" />
               </a>
             </div>
-            <div class="navbar-burger">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="navbar-menu">
-              <ul class="navbar-list">
-                <li class="navbar-item"><a>Home</a></li>
-                <li class="navbar-item"><a href="#about-us">Про нас</a></li>
-                <li class="navbar-item"><a>Пожертвувати</a></li>
-                <li class="navbar-item">
-                  <a href="#story-block">Щасливі історії</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="#reviews-block">Відгуки</a>
-                </li>
-                <li class="navbar-item"><a>Звʼязатись з нами</a></li>
-              </ul>
+            <div class="burger-container">
+              <input
+                type="checkbox"
+                id="burger-toggle"
+                class="navbar-checkbox"
+              />
+              <label for="burger-toggle" class="navbar-burger">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <div class="navbar-menu">
+                <ul class="navbar-list">
+                  <li class="navbar-item"><a href="#home-block">Home</a></li>
+                  <li class="navbar-item"><a href="#about-us">Про нас</a></li>
+                  <li class="navbar-item"><a href="#donate">Пожертвувати</a></li>
+                  <li class="navbar-item">
+                    <a href="#story-block">Щасливі історії</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#reviews-block">Відгуки</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#contact-us">Звʼязатись з нами</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -91,23 +116,25 @@
     <main>
       <section id="home-block" class="home-block-section">
         <div class="home-content">
-          <h1 class="home-heading">
-            5 МІЛЬЙОНІВ СОБАК І КОТІВ БЕЗ ДОМІВКИ — ЗМІНИМО ЇХНЮ ДОЛЮ РАЗОМ
-          </h1>
+          <div class="home-wrapper">
+            <h1 class="home-heading">
+              5 МІЛЬЙОНІВ СОБАК І КОТІВ БЕЗ ДОМІВКИ — ЗМІНИМО ЇХНЮ ДОЛЮ РАЗОМ
+            </h1>
 
-          <p class="home-description">
-            Проблема бездомних тварин потребує нашої уваги. Ми прагнемо створити
-            світ, де кожна собака та кіт мають дім і люблячу сім'ю.
-          </p>
+            <p class="home-description">
+              Проблема бездомних тварин потребує нашої уваги. Ми прагнемо
+              створити світ, де кожна собака та кіт мають дім і люблячу сім'ю.
+            </p>
 
-          <div class="home-buttons">
-            <a href="#explore" class="btn btn-primary">Дізнатися більшe</a>
-            <a href="#petdox" class="btn btn-secondary">Взяти улюбленця</a>
+            <div class="home-buttons">
+              <button class="btn-primary">
+                <a href="#about-us">Дізнатися більшe</a>
+              </button>
+              <button class="btn-secondary">
+                <a href="#adopt-pet">Взяти улюбленця</a>
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div class="home-image">
-          <img src="/images/cat-background.jpg" alt="Людина тримає кота" />
         </div>
       </section>
       <!--About-Us-Block-->
@@ -121,16 +148,15 @@
             />
           </div>
 
-          <div class="about-us-icon-container">
-            <img
-              class="about-us-icon"
-              src="./images/about-us-icon.png"
-              alt="icon"
-            />
-          </div>
-
           <div class="about-us-content">
-            <h3>Про нас</h3>
+            <div class="about-us-icon-container">
+              <img
+                class="about-us-icon"
+                src="./images/about-us-icon.png"
+                alt="icon"
+              />
+              <h3>Про нас</h3>
+            </div>
             <h2>Познайомтесь з нашим чудовим проєктом допомоги тваринкам</h2>
             <p>
               Ласкаво просимо до нашого притулку для тварин – місця, де кожна
@@ -147,12 +173,22 @@
               відповідальності до своїх чотирилапих друзів. Разом ми будуємо
               світ, у якому кожна тварина відчуває тепло людської доброти.
             </p>
-            <button>Звʼязатися з нами</button>
+            <a href="#contact-us" class="btn-link">Звʼязатися з нами</a>
           </div>
         </div>
       </section>
 
       <!--Adopt-Pet-Block-->
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#4d0aa4"
+            fill-opacity="1"
+            d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,192C672,160,768,128,864,138.7C960,149,1056,203,1152,234.7C1248,267,1344,277,1392,282.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
       <section id="adopt-pet" class="adopt-pet-section">
         <div class="adopt-pet-container">
           <div class="adopt-pet-icon-container">
@@ -176,9 +212,9 @@
               <h3>Чарлі</h3>
               <p>
                 Дружній і активний, Чарлі обожнює гратися з м'ячиком і проводить
-                час на природі. Він стане вашим вірним другом!
+                час на природі.
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 2-->
@@ -189,7 +225,7 @@
                 Енергійна і весела собачка, яка любить прогулянки та пригоди.
                 Вона завжди готова до гри!
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 3-->
@@ -200,7 +236,7 @@
                 Pозумний і слухняний, обожнює ласку та комфорт. Ідеальний
                 компаньйон для всієї родини!
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 4-->
@@ -211,7 +247,7 @@
                 Лагідний котик із великим серцем. Він готовий дарувати тепло і
                 муркотіння новій родині!
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 5-->
@@ -222,7 +258,7 @@
                 Мила та пухнаста красуня, яка мріє про дім, де її любитимуть і
                 піклуватимуться.
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 6-->
@@ -231,42 +267,99 @@
               <h3>Купер</h3>
               <p>
                 Грайливий золотистий ретрівер, який обожнює воду та прогулянки.
-                Він стане вірним другом і захисником!
+                Він стане вірним другом!
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 7-->
-            <div class="adopt-pet-card-6">
+            <div class="adopt-pet-card-7">
               <img src="./images/tucker.jpg" alt="tucker" />
               <h3>Такер</h3>
               <p>
                 Доброзичливий та відданий собака. Він чекає на людину, яка
                 подарує йому любов і тепло.
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
 
             <!--Card 8-->
-            <div class="adopt-pet-card-6">
+            <div class="adopt-pet-card-8">
               <img src="./images/piper.jpg" alt="piper" />
               <h3>Пайпер</h3>
               <p>
                 Чутливий і ніжний друг, який завжди поруч. Він стане джерелом
                 радості для вас і вашої сім'ї!
               </p>
-              <button>Взяти улюбленця</button>
+              <button><a href="#contact-us">Взяти улюбленця</a></button>
             </div>
           </div>
         </div>
       </section>
-
+      <div>
+        <svg
+          class="wave-svg-2"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 180"
+        >
+          <path
+            fill="#4d0aa4"
+            fill-opacity="1"
+            d="M0,96L48,96C96,96,192,96,288,85.3C384,75,480,53,576,53.3C672,53,768,75,864,85.3C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <!--Story-Block-->
+      <section id="story-block" class="story-block-section">
+        <div class="story-container">
+          <div class="story-text">
+            <div class="story-icon-container">
+              <img
+                class="story-icon"
+                src="./images/about-us-icon.png"
+                alt="icon"
+              />
+            </div>
+            <h2>Історія кохання між Руфусом та Софією</h2>
+            <p>
+              Розкажемо вам історію про дружбу та любов. Вона про те, як дві
+              душі знайшли одна одну та створили теплу й неповторну історію.
+              Наша команда створює можливості для зустрічей та єднання людей з
+              тваринами, які шукають любов та турботу.
+            </p>
+            <p>
+              Руфус та Софія - це лише одна з багатьох історій, які доводять, що
+              доброта та любов здатні змінити світ. Наша місія – допомогти
+              створити більше таких моментів. Дізнайтеся більше про їхню історію
+              та долучайтеся до нашої спільноти!
+            </p>
+            <button><a href="#contact-us">Дізнатися більше</a></button>
+          </div>
+          <div class="story-image">
+            <img src="./images/rufus-sophia.avif" alt="Руфус та Софія" />
+          </div>
+        </div>
+      </section>
       <!--Statistics-Block-->
+      <div>
+        <svg
+          class="wave-svg-3"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 310"
+        >
+          <path
+            fill="#4d0aa4"
+            fill-opacity="1"
+            d="M0,288L60,277.3C120,267,240,245,360,218.7C480,192,600,160,720,165.3C840,171,960,213,1080,234.7C1200,256,1320,256,1380,256L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
       <section class="statistics-section">
         <div class="statistics-container">
-          <h2>Історії Успіху</h2>
-          <p>Разом ми змінюємо світ на краще.</p>
-
+          <div class="statistics-text">
+            <h2>Історії Успіху</h2>
+            <p>Разом ми змінюємо світ на краще.</p>
+          </div>
           <div class="statistics-cards">
             <div class="statistics-card-1">
               <h3>100K</h3>
@@ -285,9 +378,22 @@
           </div>
         </div>
       </section>
+      <div>
+        <svg
+          class="wave-svg-4"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 180"
+        >
+          <path
+            fill="#4d0aa4"
+            fill-opacity="1"
+            d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,74.7C672,75,768,53,864,53.3C960,53,1056,75,1152,96C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
 
       <!--Donate-Block-->
-      <section class="donation-section">
+      <section id="donate" class="donation-section">
         <div class="donation-container">
           <div class="donation-info">
             <div class="about-us-icon-container">
@@ -307,7 +413,7 @@
               Кожен внесок допомагає забезпечити притулок, їжу, медичну допомогу
               і шанс знайти люблячу сім'ю.
             </p>
-            <button class="learn-more-btn">Дізнатися більше</button>
+            <button class="learn-more-btn"><a href="#contact-us">Дізнатися більше</a></button>
           </div>
 
           <div class="donation-option">
@@ -320,17 +426,17 @@
 
             <div class="donation-option-1">
               <h4>20 USD</h4>
-              <button class="donate-btn">Пожертвувати</button>
+              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
             </div>
 
             <div class="donation-option-1">
               <h4>40 USD</h4>
-              <button class="donate-btn">Пожертвувати</button>
+              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
             </div>
 
             <div class="donation-option-1">
               <h4>75 USD</h4>
-              <button class="donate-btn">Пожертвувати</button>
+              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
             </div>
 
             <p class="donation-note">
@@ -340,10 +446,12 @@
           </div>
         </div>
       </section>
-      <section class="contact-section">
+      <section id="contact-us" class="contact-section">
         <div class="contact-container">
           <div class="contact-heading">
-            <p class="contact-icon">🐾</p>
+            <div class="contact-paw">
+              <i class="fa-solid fa-paw"></i>
+            </div>
             <h2 class="contact-title">
               З нами собаки перестають виживати, а починають жити!
             </h2>
@@ -363,6 +471,8 @@
                     name="name"
                     placeholder="Ваше ім'я"
                     class="form-input"
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}"
+                    title="Ім'я повинно містити щонайменше 2 літери і лише букви."
                     required
                   />
                 </div>
@@ -371,6 +481,8 @@
                     type="email"
                     name="email"
                     placeholder="Ваш Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Будь ласка, введіть дійсну email адресу."
                     class="form-input"
                     required
                   />
@@ -380,6 +492,8 @@
                     name="message"
                     placeholder="Ваше повідомлення"
                     class="form-textarea"
+                    minlength="10"
+                    title="Повідомлення повинно містити щонайменше 10 символів."
                     required
                   ></textarea>
                 </div>
@@ -388,12 +502,28 @@
                 </button>
               </form>
             </div>
-            <div class="contact-image">
-              <img src="images/girl-with-dog.jpg" alt="Дівчина з собакою" />
+            <div class="contact-image-wrapper">
+              <div class="contact-image">
+                <img src="images/girl-with-dog.jpg" alt="Дівчина з собакою" />
+              </div>
             </div>
           </div>
         </div>
 
+        <!--call-to-action-Block-->
+        <div>
+          <svg
+            class="wave-svg-3"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 310"
+          >
+            <path
+              fill="#4d0aa4"
+              fill-opacity="1"
+              d="M0,288L60,277.3C120,267,240,245,360,218.7C480,192,600,160,720,165.3C840,171,960,213,1080,234.7C1200,256,1320,256,1380,256L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
         <div class="call-to-action">
           <div class="call-to-action-content">
             <h3 class="call-to-action-text">
@@ -406,33 +536,20 @@
           </div>
         </div>
       </section>
-      <!--Story-Block-->
-      <section id="story-block" class="story-block-section">
-        <div class="story-container">
-          <div class="story-text">
-            <h2>
-              <i class="fa-solid fa-paw"></i> Історія кохання між Руфусом та
-              Софією
-            </h2>
-            <p>
-              Розкажемо вам історію про дружбу та любов. Вона про те, як дві
-              душі знайшли одна одну та створили теплу й неповторну історію.
-              Наша команда створює можливості для зустрічей та єднання людей з
-              тваринами, які шукають любов та турботу.
-            </p>
-            <p>
-              Руфус та Софія - це лише одна з багатьох історій, які доводять, що
-              доброта та любов здатні змінити світ. Наша місія – допомогти
-              створити більше таких моментів. Дізнайтеся більше про їхню історію
-              та долучайтеся до нашої спільноти!
-            </p>
-            <button>Дізнатися більше</button>
-          </div>
-          <div class="story-image">
-            <img src="./images/rufus-sophia.avif" alt="Руфус та Софія" />
-          </div>
-        </div>
-      </section>
+      <div>
+        <svg
+          class="wave-svg-4"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 180"
+        >
+          <path
+            fill="#4d0aa4"
+            fill-opacity="1"
+            d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,74.7C672,75,768,53,864,53.3C960,53,1056,75,1152,96C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
       <!--REviews-Block-->
       <section id="reviews-block" class="reviews-block-section">
         <div class="reviews-block-container">
@@ -494,8 +611,7 @@
       <div class="container">
         <!-- Logo and Description -->
         <div class="footer-section">
-          <h2 class="footer-logo">Petdox</h2>
-          <img src="images/logo.png" alt="Фото Скотті" />
+          <img src="images/logo.png" />
           <p>
             Допоможіть життю наших маленьких друзів із лапками. Зробіть свій
             внесок або допоможіть знайти дім для тварини.
@@ -503,7 +619,7 @@
         </div>
 
         <!-- Donate Section -->
-        <div class="footer-section">
+        <div class="footer-section1">
           <h3>Пожертвувати</h3>
           <ul>
             <li>PayPal</li>
@@ -514,7 +630,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="footer-section">
+        <div class="footer-section2">
           <h3>Контакти</h3>
           <ul>
             <li><strong>Адреса:</strong> м. Київ, Україна</li>
@@ -524,7 +640,7 @@
         </div>
 
         <!-- Working Hours -->
-        <div class="footer-section">
+        <div class="footer-section3">
           <h3>Графік роботи</h3>
           <ul>
             <li>Понеділок - П’ятниця</li>
