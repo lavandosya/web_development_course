@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/call-to-action.css" />
     <link rel="stylesheet" href="styles/reviews-block.css" />
+    <link rel="stylesheet" href="styles/adopt-win.css" />
     <script
       src="https://kit.fontawesome.com/1bcd533024.js"
       crossorigin="anonymous"
@@ -214,7 +215,7 @@
                 Дружній і активний, Чарлі обожнює гратися з м'ячиком і проводить
                 час на природі.
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="1">Детальніше</button>
             </div>
 
             <!--Card 2-->
@@ -225,7 +226,7 @@
                 Енергійна і весела собачка, яка любить прогулянки та пригоди.
                 Вона завжди готова до гри!
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="2">Детальніше</button>
             </div>
 
             <!--Card 3-->
@@ -236,7 +237,7 @@
                 Pозумний і слухняний, обожнює ласку та комфорт. Ідеальний
                 компаньйон для всієї родини!
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="3">Детальніше</button>
             </div>
 
             <!--Card 4-->
@@ -247,7 +248,7 @@
                 Лагідний котик із великим серцем. Він готовий дарувати тепло і
                 муркотіння новій родині!
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="4">Детальніше</button>
             </div>
 
             <!--Card 5-->
@@ -258,7 +259,7 @@
                 Мила та пухнаста красуня, яка мріє про дім, де її любитимуть і
                 піклуватимуться.
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="5">Детальніше</button>
             </div>
 
             <!--Card 6-->
@@ -269,7 +270,7 @@
                 Грайливий золотистий ретрівер, який обожнює воду та прогулянки.
                 Він стане вірним другом!
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="6">Детальніше</button>
             </div>
 
             <!--Card 7-->
@@ -280,7 +281,7 @@
                 Доброзичливий та відданий собака. Він чекає на людину, яка
                 подарує йому любов і тепло.
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="7">Детальніше</button>
             </div>
 
             <!--Card 8-->
@@ -291,7 +292,7 @@
                 Чутливий і ніжний друг, який завжди поруч. Він стане джерелом
                 радості для вас і вашої сім'ї!
               </p>
-              <button><a href="#contact-us">Взяти улюбленця</a></button>
+              <button class="details-button" data-id="8">Детальніше</button>
             </div>
           </div>
         </div>
@@ -308,7 +309,9 @@
             d="M0,96L48,96C96,96,192,96,288,85.3C384,75,480,53,576,53.3C672,53,768,75,864,85.3C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
-      </div>
+</div>
+    
+
       <!--Story-Block-->
       <section id="story-block" class="story-block-section">
         <div class="story-container">
@@ -651,6 +654,19 @@
       </div>
     </footer>
 
+    <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <p id="modal-age"></p>
+          <p id="modal-breed"></p>
+          <p id="modal-sex"></p>
+          <button id="adopt-button"><a href="#contact-us">Взяти улюбленця</a></button>
+      </div>
+  </div>
+  
     <script src="js/scripts.js"></script>
+    <script src="js/adopt.js"></script>
   </body>
 </html>
