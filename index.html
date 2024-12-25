@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/adopt-pets.css" />
     <link rel="stylesheet" href="styles/contact-us.css" />
     <link rel="stylesheet" href="styles/statistics.css" />
-    <link rel="stylesheet" href="styles/donate.css"/>
+    <link rel="stylesheet" href="styles/donate.css" />
     <link rel="stylesheet" href="styles/story.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/call-to-action.css" />
@@ -96,7 +96,9 @@
                 <ul class="navbar-list">
                   <li class="navbar-item"><a href="#home-block">Home</a></li>
                   <li class="navbar-item"><a href="#about-us">Про нас</a></li>
-                  <li class="navbar-item"><a href="#donate">Пожертвувати</a></li>
+                  <li class="navbar-item">
+                    <a href="#donate">Пожертвувати</a>
+                  </li>
                   <li class="navbar-item">
                     <a href="#story-block">Щасливі історії</a>
                   </li>
@@ -413,7 +415,9 @@
               Кожен внесок допомагає забезпечити притулок, їжу, медичну допомогу
               і шанс знайти люблячу сім'ю.
             </p>
-            <button class="learn-more-btn"><a href="#contact-us">Дізнатися більше</a></button>
+            <button class="learn-more-btn">
+              <a href="#contact-us">Дізнатися більше</a>
+            </button>
           </div>
 
           <div class="donation-option">
@@ -426,17 +430,23 @@
 
             <div class="donation-option-1">
               <h4>20 USD</h4>
-              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
+              <button class="donate-btn">
+                <a href="#contact-us">Пожертвувати</a>
+              </button>
             </div>
 
             <div class="donation-option-1">
               <h4>40 USD</h4>
-              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
+              <button class="donate-btn">
+                <a href="#contact-us">Пожертвувати</a>
+              </button>
             </div>
 
             <div class="donation-option-1">
               <h4>75 USD</h4>
-              <button class="donate-btn"><a href="#contact-us">Пожертвувати</a></button>
+              <button class="donate-btn">
+                <a href="#contact-us">Пожертвувати</a>
+              </button>
             </div>
 
             <p class="donation-note">
@@ -557,7 +567,39 @@
           <p class="subtitle">
             Ласкаво просимо! Дізнайтеся, що кажуть про нас наші клієнти.
           </p>
-          <div class="reviews">
+          <div class="review-form">
+            <div class="review-name-container">
+              <span>Ваше імʼя:</span>
+              <input id="review-name" type="text" />
+            </div>
+            <div class="review-text-container">
+              <span>Ваш відгук:</span>
+              <textarea id="review-text" rows="4" cols="50"></textarea>
+            </div>
+            <div class="review-rating">
+              <span>Оцініть нас:</span>
+              <div class="star-rating" id="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
+            </div>
+            <div class="file-upload">
+              <span>Додати своє фото:</span>
+              <input type="file" id="file-input" />
+              <img
+                id="file-preview"
+                class="file-preview"
+                alt="Попередній перегляд"
+              />
+            </div>
+            <button id="submit-review" class="reviews-add-button">
+              Залишити відгук
+            </button>
+          </div>
+          <div id="reviews" class="reviews">
             <div class="review-card">
               <img
                 src="images/stiv.png"
@@ -652,5 +694,6 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/review.js"></script>
   </body>
 </html>
