@@ -1,4 +1,4 @@
-.modal {
+.adopt-modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -10,16 +10,16 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+.adopt-modal-content {
     background-color: var(--white);
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid var(--main-purple);
     width: 50%;
     text-align: center;
+    border-radius: 8px;
 }
 
-.close {
+.adopt-close {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -38,8 +38,8 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.close:hover,
-.close:focus {
+.adopt-close:hover,
+.adopt-close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
