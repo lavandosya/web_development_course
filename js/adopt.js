@@ -10,13 +10,13 @@ const pets = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('modal');
-    const modalTitle = document.getElementById('modal-title');
-    const modalDescription = document.getElementById('modal-description');
-    const modalAge = document.getElementById('modal-age');
-    const modalBreed = document.getElementById('modal-breed');
-    const modalSex = document.getElementById('modal-sex');
-    const closeModal = document.querySelector('.close');
+    const modal = document.getElementById('adopt-modal');
+    const modalTitle = document.getElementById('adopt-modal-title');
+    const modalDescription = document.getElementById('adopt-modal-description');
+    const modalAge = document.getElementById('adopt-modal-age');
+    const modalBreed = document.getElementById('adopt-modal-breed');
+    const modalSex = document.getElementById('adopt-modal-sex');
+    const closeModal = document.querySelector('.adopt-close');
 
     document.querySelectorAll('.details-button').forEach(button => {
         button.addEventListener('click', () => {
